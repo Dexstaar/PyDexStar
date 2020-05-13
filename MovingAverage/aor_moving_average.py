@@ -2,7 +2,7 @@ import pandas as pd
 import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 
-company = web.DataReader("QQQ", "yahoo", "2019-11-01", "2020-05-08")
+company = web.DataReader("AOR", "yahoo", "2019-10-01", "2020-03-11")
 company_wd = company[company['Volume'] != 0]
 
 # 90일 이동평균값
